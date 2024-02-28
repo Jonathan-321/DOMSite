@@ -1,0 +1,338 @@
+/* Style for body  */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: lightyellow; /* Change body background color to white */
+  color: #333; /* Change body text color to a dark gray */
+}
+
+button {
+    background-color: #ff6600;
+    border:#58d817bd;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Change display property to block */
+    margin: 2em auto; /* Set left and right margin to auto */
+    font-size: 12px;
+    cursor: pointer;
+    max-width: 15in; /* Set maximum width to 10 inches */
+    max-height: fit-content;
+}
+
+/* Style for header */
+#tech, #student, #acm {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+
+/* Style for headers */
+h1,
+h2,
+h3 {
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Change font family */
+  font-size: 28px; /* Change font size */
+  color: #ff6600; /* Change header text color to an appealing orange */
+  text-align: center; /* Center align headers */
+  margin: 12px;
+}
+
+h1 {
+  font-size: 36px; /* Increase font size of h1 */
+}
+
+h2 {
+  font-size: 32px; /* Increase font size of h2 */
+}
+
+h3 {
+  font-size: 28px; /* Increase font size of h3 */
+}
+
+/* Style for headers */
+h1,
+h2,
+h3 {
+  color: hsl(0, 0%, 7%); /* Change header text color to a dark gray */
+  text-align: center; /* Center align headers */
+  font-family: "Times New Roman", Times, serif;
+  margin: 12px;
+}
+
+h1 {
+  font-size: 24px; /* Increase font size of h1 */
+}
+
+h2 {
+  font-size: 20px; /* Increase font size of h2 */
+}
+
+h3 {
+  font-size: 18px; /* Increase font size of h3 */
+}
+
+/* Style for paragraphs and description class */
+
+.description {
+  color: #111111; /* Change description text color to a medium gray */
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px; /* Increase font size of description */
+  text-align: center; /* Center align description */
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  max-width: 9in; /* Set maximum width to 10 inches */
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0 auto; /* Center align the menu */
+  padding: 0;
+  overflow: hidden;
+  max-width: 1in; /* Set maximum width to 10 inches */
+}
+
+.menu li {
+  display: inline-block; /* Display menu items horizontally */
+  font-family: "Times New Roman", Times, serif; /* Change font family */
+  font-size: 18px; /* Change font size */
+}
+
+.menu li a:hover {
+  background-color: #de6108;
+  color: #fff;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a {
+  display: block;
+  color: #de6108;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Style for contact button */
+.contact-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #de6108;
+  color: #fff; /* Change contact button text color to white */
+  text-decoration: none;
+}
+
+/* Style for footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: #333; /* Change footer text color to a dark gray */
+}
+
+/* Style for image */
+img {
+  max-width: 80%; /* Ensure images don't exceed their container width */
+  max-height: 60%; /* Maintain aspect ratio of images */
+  margin-left: auto; /* Set left margin to auto */
+  margin-right: auto; /* Set right margin to auto */
+  max-width: 10in; /* Set maximum width to 10 inches */
+}
+
+/* Generic class selector example */
+.image-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Generic class selector example */
+/* Generic class selector example */
+
+form {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+input#username{
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type = "submit"]{
+  background-color: #de6108;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.image-container img {
+  border-radius: 0;
+  border: 2px solid #de6108;
+  padding: 10px;
+  width: 900px;
+  height: 500px;
+  margin: 20px;
+  margin-left: auto; /* Set left margin to auto */
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  margin: 0 auto;
+  padding: 20px;
+  left: 100%;
+  top: 0;
+}
+
+.drop-active {
+  border-color: #de6108;
+}
+
+.drop-zone::before {
+  content: "Drag your image here";
+  color: #999;
+  font-style: italic;
+}
+
+.drop-active {
+  border: 2px solid #666; 
+}
+
+.drop-zone::before {
+  content: "Drag and drop my 'Memoir' image here !!";
+  color: #999;
+  font-style: italic;
+}
+
+.drop-zone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Style for contact button */
+.contact-button {
+  padding: 10px 25px;
+  background-color: #de6108;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto; /* Align center */
+}
+
+.button-container {
+  text-align: center;
+}
+/* Generic class selector example */
+.image-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.accordion-content {
+  text-align: center;
+  padding: 12px;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+  font-style: italic;
+}
+
+.accordion-content p {
+  max-width: 700px;
+  margin: 0 auto;  
+}
+
+/* Style for footer */
+
+.accordion li{
+  list-style-type: none;
+  margin: 0 auto; /* Center align the menu */
+  padding: 0;
+  overflow: hidden;
+}
+
+.accordion li a{
+  display: block;
+  color: #de6108;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Accordion sections start out hidden */
+.accordion-content {
+  display: none;
+}
+
+/* Display content when clicked */
+.accordion li.active .accordion-content {
+  display: block;
+}
+.accordion {
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.accordion li {
+  list-style-type: none; 
+}
+
+.accordion-btn::before {
+  content: '\02795'; /* Unicode bullet character */
+  font-size: 13px;
+  color: #777;
+  margin-right: 10px;
+}
+
+.accordion-btn.open::before {
+  content: "\2212"; /* Unicode character for minus sign */
+}
+
+
+.hidden{
+  opacity: 0;
+  filter: blur(10px);
+  transform: translate(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+  transition: all 2s;
+}
+
+.logo:nth-child(1){
+  transition-delay: 50ms;
+}
+
+.logo:nth-child(2){
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(2){
+  transition-delay: 900ms;
+}
+
+.logo:nth-child(3){
+  transition-delay: 1500ms;
+}

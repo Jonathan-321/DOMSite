@@ -1,0 +1,185 @@
+
+
+.interest-image {
+  width: 130px; /* Modify the width as desired */
+  height: 130px; /* Modify the height as desired */
+  margin-right: 80px;
+  border: #b07219;
+  border-style: solid;
+}
+
+/* Additional styles for the section */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: lightyellow;
+  color: #4e3620;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+  h1,
+  h2 { 
+    color: #b94517;
+    margin-bottom: 1.6em;
+  }
+
+  /* Section styles */
+  section {
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Icon styles */
+  .cpp-icon {
+    color: #00599C;
+  }
+
+  .java-icon {
+    color: #b07219;
+  }
+
+  .python-icon {
+    color: #3776AB;
+  }
+
+  .flutter-icon {
+    color: #02569B;
+  }
+
+  .firebase-icon {
+    color: #c59812;
+  }
+
+  .pandas-icon {
+    color: #dae113;
+  }
+
+  .numpy-icon {
+    color: #4912f0;
+  }
+
+  .react-icon {
+    color: #61DAFB;
+  }
+
+  /* Nav menu styles */
+  nav ul {
+    list-style: none;
+    padding: 0.5in;
+    color: #b94517;
+  }
+
+  nav li {
+    display: inline-block;
+    /* Display menu items horizontally */
+    font-family: 'Times New Roman', Times, serif;
+    /* Change font family */
+    font-size: 18px;
+    /* Change font size */
+    margin: 10px 20px;
+  }
+
+  nav li a:hover {
+    background-color: #de6108;
+    color: #fff;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  nav li a {
+    color: #de6108;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  /* Footer styles */
+  footer {
+    color: #b94517;
+    padding: 10px;
+    text-align: center;
+    max-width: fit-content;
+    max-height: fit-content;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .cpp-icon,
+  .java-icon,
+  .python-icon,
+  .flutter-icon,
+  .firebase-icon,
+  .pandas-icon,
+  .numpy-icon,
+  .react-icon {
+    margin-right: 5px;
+  }
+
+  /* Image placeholders */
+  .image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 10px;
+  }
+
+  .hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translate(-100%);
+    transition: all 1s;
+  }
+  
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 2s;
+  }
+  
+  .logo:nth-child(1){
+    transition-delay: 50ms;
+  }
+  
+  .logo:nth-child(2){
+    transition-delay: 400ms;
+  }
+  
+  .logo:nth-child(2){
+    transition-delay: 900ms;
+  }
+  
+  .logo:nth-child(3){
+    transition-delay: 1500ms;
+  }
+  
+
+

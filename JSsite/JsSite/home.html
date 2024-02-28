@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css" />
+    <script defer src="anime.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My html Site!</h1>
+    </header>
+
+    <button onclick="changeContent('acm')">Tech Bro</button>
+
+    <button onclick="changeContent('tech')">Tech Enthusiast</button>
+
+    <button onclick="changeContent('student')">Student Life</button>
+
+    <img id="tech" src="" />
+    <img id="student" src="" />
+    <img id="acm" src="" />
+
+    <script>
+
+    </script>
+
+    <section id="content" class="hidden">
+        <h2>Hi There!! Meet Jonathan</h2>
+        <p class="description" >
+            I am tech enthusiast who is passionate about learning new technologies
+            and sharing his knowledge with others. I am currently in my second year
+            in Computer Science at Oklahoma Christian University. I am also a member
+            of the Association for Computing Machinery (ACM).
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h2>A glimpse into My background!</h2>
+    </section>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="about.html">About</a></li>
+            <li><a href="hometown.html">Hometown</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <section class="hidden">
+        <h2>A Memoir...</h2>
+    </section>
+
+    <p class="description hidden">
+        One of the most prevalent economic activities in my hometown is fishing.
+        Normally, fishermen go out at Lake Kivu in the morning and return in the
+        evening with their catch. The fish are then sold in the local market or
+        exported to other parts of the country. I have been fishing with my
+        friends and sometimes with siblings since I was a child, We used some thin
+        bamboo trees grown around the lake,some fishing nets and finally used
+        steples as needles to pinch and catch fish. Although I rarely make time
+        for it now, it is one of my favorite pastimes.
+    </p>
+
+    <p class="description hidden">
+        This is also a beautiful panoramic view of the calm, dark waters of Lake
+        Kivu in Gisenyi. Palm trees sway in the foreground with green hills rising
+        in the background. It's a relaxing scene.
+    </p>
+
+    <div class="image-container" >
+        <img src="images/fishing.jpg"  class="hidden" alt="Men fishing at dawn" />
+    </div>
+
+    <script>
+        function changeContent(id) {
+            document.getElementById('tech').src = '';
+            document.getElementById('student').src = '';
+            document.getElementById('acm').src = '';
+            if (id === "tech") {
+                document.getElementById(id).src = "images/techbro.jpg";
+            } else if (id === "student") {
+                document.getElementById(id).src = "images/pureai.jpg";
+            } else if (id === "acm") {  
+                document.getElementById(id).src = "images/techStudent.jpg";
+            }
+        }
+
+        function validateInput() {
+            var username = document.getElementById("username").value;
+            if (username === "") {
+                alert('OOps! You forgot to enter a number!');
+                return false;
+            } else {
+                if (username === "13") {
+                    alert('Congratulations! You got it right!');
+                    return true;
+                } else {
+                    alert('Sorry! You got it wrong. Try again!');
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>                                      
+
+    <section id="get-in-touch" class="hidden">
+        <h2>Get in Touch</h2>
+    </section>
+
+    <p class="description">
+        Have questions or want to talk? Feel free to reach out!
+    </p>
+
+    <div class="button-container">
+        <a href="contact.html" class="contact-button">Contact Me</a>
+    </div>
+
+    <section id="BrainTeaser" class="hidden">
+        <h2>Brain Teaser</h2>
+    </section>
+
+    <p class="description hidden" >
+        Quick one... Answer the number of pictures on this Website in the box below and click Submit to see if you got
+        it right.
+    </p>
+
+    <form onsubmit="return validateInput()">
+        <input id="username" type="text" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Toggle accordion content
+        function toggleAccordion(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === 'block') {
+                section.style.display = 'none';
+            } else {
+                section.style.display = 'block';
+            }
+        }
+    </script>
+
+    <section id="faq" class="hidden">
+        <h2>Frequently Asked Questions</h2>
+    </section>
+
+    <p class="description hidden">
+        Here are some of the questions I get asked most frequently. If you have
+        any other questions, feel free to reach out!
+    </p>
+
+    <div class="faq-list">
+        <ul class="accordion ">
+            <li>
+                <button class="accordion-btn" onclick="toggleAccordion('section1')">What is your background?</button>
+
+                <div id="section1" class="accordion-content logo hidden draggable">
+                    <p>I grew up in Kigali, Rwanda and moved to the United States for college. I'm currently a sophomore
+                        studying Computer Science at Oklahoma Christian University.</p>
+                </div>
+            </li>
+
+            <li><button class="accordion-btn draggable" onclick="toggleAccordion('section2')">What are your hobbies?</button>
+
+                <div id="section2" class="accordion-content logo hidden draggable">
+                    <p>Some of my hobbies include coding, playing soccer, reading, and running. I love being active and
+                        learning
+                        new things!</p>
+                </div>
+            </li>
+
+            <li><button class="accordion-btn draggable" onclick="toggleAccordion('section3')">What is your dream job?</button>
+
+                <div id="section3" class="accordion-content logo hidden draggable">
+                    <p>My dream job is to be a software engineer at a top tech company like Google or Microsoft. I want to
+                        build
+                        products that improve people's lives.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 jonathanMuhire</p>
+    </footer>
+
+</body>
+
+</html>
+

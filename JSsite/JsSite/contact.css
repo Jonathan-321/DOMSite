@@ -1,0 +1,119 @@
+
+
+
+/* Existing CSS code */
+
+
+
+/* Existing CSS code */
+
+body {
+    background-color: lightyellow;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+#contact-container {
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    color: #b94517;
+    margin-bottom: 1.6em;
+}
+h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 20px;
+    transition: transform 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+}
+i {
+    color: #de6108;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+i:hover {
+    transform: rotate(360deg);
+}
+nav {
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #b94517;
+}
+nav ul li a {
+    color: #b94517; /* Change the color to your desired color */
+    font-size: 18px; /* Change the font size to your desired size */
+}
+
+
+nav ul li a:hover {
+    color: #de6108; /* Change the color to your desired color */
+}
+nav ul li a:active {
+    color: #de6108; /* Change the color to your desired color */
+}
+nav ul li a:focus {
+    color: #de6108; /* Change the color to your desired color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    color: #b94517;
+}
+
+
+
+
+
+
+.hidden{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translate(-100%);
+    transition: all 1s;
+  }
+  
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+    transition: all 2s;
+  }
+  
+  .logo:nth-child(1){
+    transition-delay: 50ms;
+  }
+  
+  .logo:nth-child(2){
+    transition-delay: 400ms;
+  }
+  
+  .logo:nth-child(2){
+    transition-delay: 900ms;
+  }
+  
+  .logo:nth-child(3){
+    transition-delay: 1500ms;
+  }
+  
